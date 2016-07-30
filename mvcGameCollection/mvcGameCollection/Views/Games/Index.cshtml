@@ -14,14 +14,14 @@
 <p>
     Genre: @Html.DropDownList("gameGenre", "All")
     Title: @Html.TextBox("SearchString")
-    <input type="submit" value="Search" class="btn btn-primary" />
+    <input type="submit" value="Search" class="btn btn-default" />
 </p>
 }
 
 <br />
 
-<table class="table table-striped">
-    <tr>
+<table class="table table-responsive">
+    <tr class="table-header">
         <th class="text-center">
             @Html.DisplayNameFor(model => model.Title)
         </th>
@@ -67,15 +67,14 @@
 
         <td class="text-center">
             <ul class="list-inline">
-                @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-primary" })
-                @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-default" })
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-default" })
                 @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-danger" })
              </ul>
         </td>
     </tr>
     }
 </table>
-
 <p align="left">
-    @Html.ActionLink("Add New Game", "Create", null, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Add New Game", "Create", null, new { @class = "btn btn-default" })
 </p>
