@@ -5,7 +5,7 @@
     ViewBag.Title = "Index";
 }
 <div align="center">
-    <h1>My Game Collection</h1><br />
+    <h1>PS4 Game Collection</h1><br />
 </div>
 
 @using (Html.BeginForm("Index", "Games", FormMethod.Get))
@@ -64,9 +64,9 @@
 
         <td class="text-center">
             <ul class="list-inline">
-                @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-default" })
                 @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-default" })
-                @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-default" })
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-default" })
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-danger" })
              </ul>
         </td>
     </tr>
@@ -76,4 +76,3 @@
 <p align="left">
     @Html.ActionLink("Add New Game", "Create", null, new { @class = "btn btn-default" })
 </p>
-
