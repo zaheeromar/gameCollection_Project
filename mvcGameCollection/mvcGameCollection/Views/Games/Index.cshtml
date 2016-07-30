@@ -4,18 +4,21 @@
 @{
     ViewBag.Title = "Index";
 }
-<div align="center">
-    <h1>PS4 Game Collection</h1><br />
+<div class="container heading-container">
+    <div class="heading">PS4 Game Collection</div>
 </div>
+<hr />
 
 @using (Html.BeginForm("Index", "Games", FormMethod.Get))
 {
 <p>
     Genre: @Html.DropDownList("gameGenre", "All")
     Title: @Html.TextBox("SearchString")
-    <input type="submit" value="Search" />
+    <input type="submit" value="Search" class="btn btn-primary" />
 </p>
 }
+
+<br />
 
 <table class="table table-striped">
     <tr>
@@ -64,8 +67,8 @@
 
         <td class="text-center">
             <ul class="list-inline">
-                @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-default" })
-                @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-default" })
+                @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-primary" })
                 @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-danger" })
              </ul>
         </td>
@@ -74,5 +77,5 @@
 </table>
 
 <p align="left">
-    @Html.ActionLink("Add New Game", "Create", null, new { @class = "btn btn-default" })
+    @Html.ActionLink("Add New Game", "Create", null, new { @class = "btn btn-primary" })
 </p>

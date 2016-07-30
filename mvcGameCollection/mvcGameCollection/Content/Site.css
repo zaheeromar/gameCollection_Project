@@ -23,8 +23,17 @@ textarea {
     max-width: 280px;
 }
 
-.btn-default {
-    background-color: lightskyblue;
-    color: black;
+.details{
+
+    padding : 20px;
+    box-shadow : 10px 10px 5px grey;
 }
 
+.heading {
+    text-align: center;
+    font-size: 50px;
+}
+
+.heading-container {
+    padding: 10px 0;
+}
