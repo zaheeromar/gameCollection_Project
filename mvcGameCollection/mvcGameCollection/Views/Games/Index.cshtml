@@ -9,14 +9,22 @@
 </div>
 <hr />
 
-@using (Html.BeginForm("Index", "Games", FormMethod.Get))
-{
-<p>
-    Genre: @Html.DropDownList("gameGenre", "All")
-    Title: @Html.TextBox("SearchString")
-    <input type="submit" value="Search" class="btn btn-default" />
-</p>
-}
+<div class="col-sm-6">
+    @using (Html.BeginForm("Index", "Games", FormMethod.Get))
+    {
+        <p>
+            Genre: @Html.DropDownList("gameGenre", "All")
+            Title: @Html.TextBox("SearchString")
+            <input type="submit" value="Search" class="btn btn-default" />
+        </p>
+    }
+</div>
+
+<div class="col-sm-6">
+    <p align="right">
+        @Html.ActionLink("Add New Game", "Create", null, new { @class = "btn btn-default" })
+    </p>
+</div>
 
 <br />
 
@@ -74,6 +82,3 @@
     </tr>
     }
 </table>
-<p align="left">
-    @Html.ActionLink("Add New Game", "Create", null, new { @class = "btn btn-default" })
-</p>
