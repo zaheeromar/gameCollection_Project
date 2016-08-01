@@ -30,8 +30,7 @@ namespace mvcGameCollection.Models
         [Display(Name = "Hours To Beat")]
         public decimal HoursToBeat { get; set; }
 
-        [Display(Name = "PEGI Rating")]
-        [StringLength(5)]
+        [Display(Name = "Box Art")]
         public string Rating { get; set; }
     }
 

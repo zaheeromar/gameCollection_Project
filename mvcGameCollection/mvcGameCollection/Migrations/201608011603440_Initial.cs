@@ -12,11 +12,12 @@ namespace mvcGameCollection.Migrations
                 c => new
                     {
                         ID = c.Int(nullable: false, identity: true),
-                        Title = c.String(),
+                        Title = c.String(maxLength: 60),
                         Company = c.String(),
                         ReleaseDate = c.DateTime(nullable: false),
-                        Genre = c.String(),
+                        Genre = c.String(nullable: false, maxLength: 30),
                         HoursToBeat = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        Rating = c.String(),
                     })
                 .PrimaryKey(t => t.ID);
             

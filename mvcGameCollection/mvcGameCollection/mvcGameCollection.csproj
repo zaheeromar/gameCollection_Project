@@ -203,25 +203,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201607281823449_Initial.cs" />
-    <Compile Include="Migrations\201607281823449_Initial.Designer.cs">
-      <DependentUpon>201607281823449_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201607291004198_Rating.cs" />
-    <Compile Include="Migrations\201607291004198_Rating.Designer.cs">
-      <DependentUpon>201607291004198_Rating.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201607291328023_DataAnnotations.cs" />
-    <Compile Include="Migrations\201607291328023_DataAnnotations.Designer.cs">
-      <DependentUpon>201607291328023_DataAnnotations.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201607291339142_DataAnnotations1.cs" />
-    <Compile Include="Migrations\201607291339142_DataAnnotations1.Designer.cs">
-      <DependentUpon>201607291339142_DataAnnotations1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201607291359041_DataAnnotations2.cs" />
-    <Compile Include="Migrations\201607291359041_DataAnnotations2.Designer.cs">
-      <DependentUpon>201607291359041_DataAnnotations2.cs</DependentUpon>
+    <Compile Include="Migrations\201608011603440_Initial.cs" />
+    <Compile Include="Migrations\201608011603440_Initial.Designer.cs">
+      <DependentUpon>201608011603440_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -314,20 +298,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201607281823449_Initial.resx">
-      <DependentUpon>201607281823449_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607291004198_Rating.resx">
-      <DependentUpon>201607291004198_Rating.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607291328023_DataAnnotations.resx">
-      <DependentUpon>201607291328023_DataAnnotations.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607291339142_DataAnnotations1.resx">
-      <DependentUpon>201607291339142_DataAnnotations1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607291359041_DataAnnotations2.resx">
-      <DependentUpon>201607291359041_DataAnnotations2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201608011603440_Initial.resx">
+      <DependentUpon>201608011603440_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

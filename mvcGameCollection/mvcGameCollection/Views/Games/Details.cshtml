@@ -9,58 +9,55 @@
 <div class="container details">
     <h4>Game</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
+    <div class="col-md-2">
+        <img src="@Url.Content(Model.Rating)" alt="Player" height="150" width="150"><br />
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Company)
-        </dt>
+    <div class="col-md-10">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Title) :
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Company)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Title)<br /><br />
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Company) :
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ReleaseDate)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Company)<br /><br />
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.ReleaseDate)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ReleaseDate) :
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Genre)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ReleaseDate)<br /><br />
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Genre)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Genre) :
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.HoursToBeat)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Genre)<br /><br />
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.HoursToBeat)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.HoursToBeat) :
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Rating)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Rating)
-        </dd>
-    </dl>
-    <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class = "btn btn-primary" })
-        @Html.ActionLink("Back to list", "Index", null, new { @class = "btn btn-primary" })
-    </p>
-
+            <dd>
+                @Html.DisplayFor(model => model.HoursToBeat)<br /><br />
+            </dd>
+        </dl>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Back to list", "Index", null, new { @class = "btn btn-primary" })
+        </p>
+    </div>
 </div>

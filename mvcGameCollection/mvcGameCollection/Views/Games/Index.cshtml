@@ -23,6 +23,9 @@
 <table class="table table-responsive">
     <tr class="table-header">
         <th class="text-center">
+            @Html.DisplayNameFor(model => model.Rating)
+        </th>
+        <th class="text-center">
             @Html.DisplayNameFor(model => model.Title)
         </th>
         <th class="text-center">
@@ -37,14 +40,14 @@
         <th class="text-center">
             @Html.DisplayNameFor(model => model.HoursToBeat)
         </th>
-         <th class="text-center">
-            @Html.DisplayNameFor(model => model.Rating)
-        </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
+        <td class="text-center">
+            <img src="@Url.Content(item.Rating)" height="100" width="100" />
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Title)
         </td>
@@ -60,11 +63,7 @@
         <td class="text-center">
             @Html.DisplayFor(modelItem => item.HoursToBeat)
         </td>
-        <td class="text-center">
-            @Html.DisplayFor(modelItem => item.Rating)
-        </td>
-
-
+        
         <td class="text-center">
             <ul class="list-inline">
                 @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-default" })

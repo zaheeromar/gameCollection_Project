@@ -166,11 +166,7 @@ C:\Users\Zaheer\Documents\GitHub\gameCollection_Project\mvcGameCollection\mvcGam
 C:\Users\Zaheer\Documents\GitHub\gameCollection_Project\mvcGameCollection\mvcGameCollection\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Zaheer\Documents\GitHub\gameCollection_Project\mvcGameCollection\mvcGameCollection\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Zaheer\Documents\GitHub\gameCollection_Project\mvcGameCollection\mvcGameCollection\obj\Debug\mvcGameCollection.csprojResolveAssemblyReference.cache
-C:\Users\Zaheer\Documents\GitHub\gameCollection_Project\mvcGameCollection\mvcGameCollection\obj\Debug\mvcGameCollection.Migrations.Initial.resources
-C:\Users\Zaheer\Documents\GitHub\gameCollection_Project\mvcGameCollection\mvcGameCollection\obj\Debug\mvcGameCollection.Migrations.Rating.resources
-C:\Users\Zaheer\Documents\GitHub\gameCollection_Project\mvcGameCollection\mvcGameCollection\obj\Debug\mvcGameCollection.Migrations.DataAnnotations.resources
-C:\Users\Zaheer\Documents\GitHub\gameCollection_Project\mvcGameCollection\mvcGameCollection\obj\Debug\mvcGameCollection.Migrations.DataAnnotations1.resources
-C:\Users\Zaheer\Documents\GitHub\gameCollection_Project\mvcGameCollection\mvcGameCollection\obj\Debug\mvcGameCollection.Migrations.DataAnnotations2.resources
-C:\Users\Zaheer\Documents\GitHub\gameCollection_Project\mvcGameCollection\mvcGameCollection\obj\Debug\mvcGameCollection.csproj.GenerateResource.Cache
 C:\Users\Zaheer\Documents\GitHub\gameCollection_Project\mvcGameCollection\mvcGameCollection\obj\Debug\mvcGameCollection.dll
 C:\Users\Zaheer\Documents\GitHub\gameCollection_Project\mvcGameCollection\mvcGameCollection\obj\Debug\mvcGameCollection.pdb
+C:\Users\Zaheer\Documents\GitHub\gameCollection_Project\mvcGameCollection\mvcGameCollection\obj\Debug\mvcGameCollection.Migrations.Initial.resources
+C:\Users\Zaheer\Documents\GitHub\gameCollection_Project\mvcGameCollection\mvcGameCollection\obj\Debug\mvcGameCollection.csproj.GenerateResource.Cache

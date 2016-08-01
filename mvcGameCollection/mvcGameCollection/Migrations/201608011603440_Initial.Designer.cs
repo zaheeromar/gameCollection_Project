@@ -13,7 +13,7 @@ namespace mvcGameCollection.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201607281823449_Initial"; }
+            get { return "201608011603440_Initial"; }
         }
         
         string IMigrationMetadata.Source
