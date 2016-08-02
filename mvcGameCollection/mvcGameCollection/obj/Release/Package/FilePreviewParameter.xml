@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="zaheeromar-001-subsite3" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\student\\Documents\\GitHub\\gameCollection_Project\\mvcGameCollection\\mvcGameCollection\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\student\\Documents\\GitHub\\gameCollection_Project\\mvcGameCollection\\mvcGameCollection\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-mvcGameCollection-20160725040320.mdf;Initial Catalog=aspnet-mvcGameCollection-20160725040320;Integrated Security=True" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\student\\Documents\\GitHub\\gameCollection_Project\\mvcGameCollection\\mvcGameCollection\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="GameDBContext-Web.config Connection String" description="" value="Data Source=SQL5030.Smarterasp.net;Initial Catalog=DB_A0AC68_gamescollection;Persist Security Info=True;User ID=DB_A0AC68_gamescollection_admin;Password=metalgear2;TrustServerCertificate=True" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\student\\Documents\\GitHub\\gameCollection_Project\\mvcGameCollection\\mvcGameCollection\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='GameDBContext']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,84 @@
+﻿@model IEnumerable<mvcGameCollection.Models.Game>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container heading-container">
+    <div class="heading">PS4 Game Collection</div>
+</div>
+<hr />
+
+<div class="col-sm-6">
+    @using (Html.BeginForm("Index", "Games", FormMethod.Get))
+    {
+        <p>
+            Genre: @Html.DropDownList("gameGenre", "All")
+            Title: @Html.TextBox("SearchString")
+            <input type="submit" value="Search" class="btn btn-default" />
+        </p>
+    }
+</div>
+
+<div class="col-sm-6">
+    <p align="right">
+        @Html.ActionLink("Add New Game", "Create", null, new { @class = "btn btn-default" })
+    </p>
+</div>
+
+<br />
+
+<table class="table table-responsive">
+    <tr class="table-header">
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Rating)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Company)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Genre)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.HoursToBeat)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td class="text-center">
+            <img src="@Url.Content(item.Rating)" height="100" width="100" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td class="text-center">
+            @Html.DisplayFor(modelItem => item.Company)
+        </td>
+        <td class="text-center">
+            @Html.DisplayFor(modelItem => item.ReleaseDate)
+        </td>
+        <td class="text-center">
+            @Html.DisplayFor(modelItem => item.Genre)
+        </td>
+        <td class="text-center">
+            @Html.DisplayFor(modelItem => item.HoursToBeat)
+        </td>
+        
+        <td class="text-center">
+            <ul class="list-inline">
+                @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-default" })
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-default" })
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-danger" })
+             </ul>
+        </td>
+    </tr>
+    }
+</table>
